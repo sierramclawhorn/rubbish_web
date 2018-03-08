@@ -18,8 +18,14 @@
               lng: position.coords.longitude
             };
 
+            var marker = new google.maps.Marker({
+              position: pos,
+              map: map,
+              title: 'You are here!'
+            });
+
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Current Location Found');
+            infoWindow.setContent('You are here');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
