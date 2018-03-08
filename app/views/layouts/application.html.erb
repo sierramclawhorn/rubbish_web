@@ -6,10 +6,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_KEY']}&callback=initMap", async: true %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAj2MBZzOCjhe5sDrfKl6HTLiJ_kpP7SJc&callback=initMap", async: true %>
   </head>
 
   <body>
+     <div id="map"></div>
+
     <%= yield %>
-  </body>
+    </body>
 </html>
